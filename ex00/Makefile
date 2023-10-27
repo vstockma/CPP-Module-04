@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+         #
+#    By: valentin <valentin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/25 15:38:18 by vstockma          #+#    #+#              #
-#    Updated: 2023/10/25 14:12:45 by vstockma         ###   ########.fr        #
+#    Updated: 2023/10/27 11:38:57 by valentin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = poly
+NAME = animal
 
 SRC = main.cpp animal.cpp dog.cpp cat.cpp wrongcat.cpp wronganimal.cpp
 

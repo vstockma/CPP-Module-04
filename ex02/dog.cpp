@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 11:26:12 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/27 12:17:21 by valentin         ###   ########.fr       */
+/*   Updated: 2023/10/25 14:04:32 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,11 @@ Dog::Dog()
 {
     std::cout << "Dog constructor called" << std::endl;
     _type = "Dog";
-    _braindog = new Brain();
 }
 
 Dog::~Dog()
 {
     std::cout << "Dog destructor called" << std::endl;
-    delete _braindog;
 }
 
 Dog::Dog(const Dog& copy)
