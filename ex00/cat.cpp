@@ -16,13 +16,11 @@ Cat::Cat()
 {
     std::cout << "Cat constructor called" << std::endl;
     _type = "Cat";
-    _braincat = new Brain();
 }
 
 Cat::~Cat()
 {
     std::cout << "Cat destructor called" << std::endl;
-    delete _braincat;
 }
 
 Cat::Cat(const Cat& copy)

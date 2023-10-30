@@ -14,12 +14,9 @@
 #define DOG_HPP
 
 #include "animal.hpp"
-#include "brain.hpp"
 
 class Dog : public Animal
 {
-    private:
-        Brain* _braindog;
     public:
         Dog();
         Dog(const Dog& copy);

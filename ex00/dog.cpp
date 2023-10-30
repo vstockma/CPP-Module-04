@@ -16,13 +16,11 @@ Dog::Dog()
 {
     std::cout << "Dog constructor called" << std::endl;
     _type = "Dog";
-    _braindog = new Brain();
 }
 
 Dog::~Dog()
 {
     std::cout << "Dog destructor called" << std::endl;
-    delete _braindog;
 }
 
 Dog::Dog(const Dog& copy)
