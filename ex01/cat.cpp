@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 11:26:38 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/30 11:02:55 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/30 15:11:34 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ Cat::Cat()
 
 Cat::~Cat()
 {
-    std::cout << "Cat destructor called" << std::endl;
     delete _catbrain;
+    std::cout << "Cat destructor called" << std::endl;
 }
 
 Cat::Cat(const Cat& copy)
@@ -34,6 +34,7 @@ Cat&  Cat::operator=(const Cat& copy)
 {
     std::cout << "Cat copy asignment operator called" << std::endl;
     _type = copy._type;
+    _catbrain = new Brain();
     return (*this);
 }
 

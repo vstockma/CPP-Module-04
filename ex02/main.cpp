@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 11:06:11 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/30 11:56:59 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/30 15:28:16 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 
 int main()
 {
+    Dog test;
+    {
+        Dog tmp = test;
+        // std::cout << tmp._dogbrain << std::endl;
+        // std::cout << test._dogbrain << std::endl;
+    }
     // Animal* arr[10];
     // int i = 0;
     // while (i < 10)
@@ -31,12 +37,12 @@ int main()
     // i = 0;
     // while (i < 10)
     //     delete arr[i++];
-        
-    const Animal* j = new Dog();
-    const Animal* i = new Cat();
-    i->makeSound();
-    j->makeSound();
-    delete j;//should not create a leak
-    delete i;
+
+    // const Animal* j = new Dog();
+    // const Animal* i = new Cat();
+    // i->makeSound();
+    // j->makeSound();
+    // delete j;//should not create a leak
+    // delete i;
     return 0;
 }

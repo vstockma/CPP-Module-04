@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 11:26:12 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/30 11:03:02 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/30 15:28:04 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ Dog::Dog()
 
 Dog::~Dog()
 {
-    std::cout << "Dog destructor called" << std::endl;
     delete _dogbrain;
+    std::cout << "Dog destructor called" << std::endl;
 }
 
 Dog::Dog(const Dog& copy)
@@ -34,6 +34,7 @@ Dog&  Dog::operator=(const Dog& copy)
 {
     std::cout << "Dog copy asignment operator called" << std::endl;
     _type = copy._type;
+    _dogbrain = new Brain();
     return (*this);
 }
 
