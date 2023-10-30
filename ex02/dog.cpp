@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 11:26:12 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/25 14:04:32 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/30 11:03:02 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,13 @@ Dog::Dog()
 {
     std::cout << "Dog constructor called" << std::endl;
     _type = "Dog";
+    _dogbrain = new Brain();
 }
 
 Dog::~Dog()
 {
     std::cout << "Dog destructor called" << std::endl;
+    delete _dogbrain;
 }
 
 Dog::Dog(const Dog& copy)

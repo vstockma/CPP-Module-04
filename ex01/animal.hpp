@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 11:06:40 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/25 14:26:37 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/30 10:38:03 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Animal
         Animal();
         Animal(const Animal& copy);
         Animal& operator=(const Animal& copy);
-        ~Animal();
+        virtual ~Animal();
         std::string getType() const;
         virtual void makeSound() const;
 };

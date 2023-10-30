@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 11:06:11 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/27 12:26:58 by valentin         ###   ########.fr       */
+/*   Updated: 2023/10/30 11:56:59 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,25 @@
 
 int main()
 {
-    // const Animal* meta = new Animal();
-    // const Animal* j = new Dog();
-    // const Animal* i = new Cat();
-    // std::cout << j->getType() << " " << std::endl;
-    // std::cout << i->getType() << " " << std::endl;
-    // i->makeSound(); //will output the cat sound!
-    // j->makeSound();
-    // meta->makeSound();
-    WrongCat cat;
-    // WrongAnimal animal;
-
-    // animal.makeSound();
-    cat.makeSound();
+    // Animal* arr[10];
+    // int i = 0;
+    // while (i < 10)
+    // {
+    //     if (i < 5)
+    //         arr[i] = new Dog();
+    //     else
+    //         arr[i] = new Cat();
+    //     i++;
+    // }
+    // i = 0;
+    // while (i < 10)
+    //     delete arr[i++];
+        
+    const Animal* j = new Dog();
+    const Animal* i = new Cat();
+    i->makeSound();
+    j->makeSound();
+    delete j;//should not create a leak
+    delete i;
     return 0;
 }
